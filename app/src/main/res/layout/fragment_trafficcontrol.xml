@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/trafficcontrol_tv_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="日期" />
+
+        <TextView
+            android:id="@+id/trafficcontrol_tv_CarIds"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="单号出行车辆: 1, 3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="出行车辆设置: " />
+
+            <ListView
+                android:id="@+id/trafficcontrol_lv_setting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/trafficcontrol_iv_redlight"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/shape_oval_gray" />
+
+            <ImageView
+                android:id="@+id/trafficcontrol_iv_yellowlight"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/shape_oval_gray" />
+
+            <ImageView
+                android:id="@+id/trafficcontrol_iv_greenlight"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/shape_oval_gray" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

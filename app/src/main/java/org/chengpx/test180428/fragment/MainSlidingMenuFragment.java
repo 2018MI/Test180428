@@ -13,7 +13,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import org.chengpx.test180428.BaseFragment;
+import org.chengpx.mylib.BaseFragment;
 import org.chengpx.test180428.R;
 
 /**
@@ -27,10 +27,10 @@ public class MainSlidingMenuFragment extends Fragment implements AdapterView.OnI
     private FragmentActivity mFragmentActivity;
 
     private String[] mItemStrArr = {
-            "第一题个人车辆ETC账户管理功能"
+            "第一题个人车辆ETC账户管理功能", "公司交通单双号管制功能"
     };
     private BaseFragment[] mBaseFragmentArr = {
-            new CarEtcBalanceManagerFragment()
+            new CarEtcBalanceManagerFragment(), new TrafficControlFragment()
     };
 
     @Nullable

@@ -23,6 +23,8 @@ public class CarBean {
     private Date rechargeDate;
     @DatabaseField(columnName = "fk_uid", foreignColumnName = "id", foreign = true, foreignAutoRefresh = true)
     private UserBean user;
+    @DatabaseField(persisted = false)// 该字段不持久化
+    private String CarAction;
 
     public Integer getId() {
         return id;
@@ -72,6 +74,14 @@ public class CarBean {
         this.user = user;
     }
 
+    public String getCarAction() {
+        return CarAction;
+    }
+
+    public void setCarAction(String carAction) {
+        CarAction = carAction;
+    }
+
     @Override
     public String toString() {
         return "CarBean{" +
@@ -81,6 +91,7 @@ public class CarBean {
                 ", Money=" + Money +
                 ", rechargeDate=" + rechargeDate +
                 ", user=" + user +
+                ", CarAction='" + CarAction + '\'' +
                 '}';
     }
 
