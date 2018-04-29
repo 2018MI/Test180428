@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal">
+
+    <TableRow>
+
+        <TextView android:text="账户余额: " />
+
+        <TextView
+            android:id="@+id/caretcbalancemanager_tv_balance"
+            android:layout_marginLeft="50dp" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:text="车号: " />
+
+        <Spinner
+            android:id="@+id/caretcbalancemanager_spinner_CarId"
+            android:layout_marginLeft="50dp" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:text="充值金额: " />
+
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/caretcbalancemanager_et_Money"
+            android:layout_marginLeft="50dp" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/caretcbalancemanager_btn_search"
+            android:text="查询" />
+
+        <Button
+            android:id="@+id/caretcbalancemanager_btn_recharge"
+            android:layout_marginLeft="50dp"
+            android:text="充值" />
+
+    </TableRow>
+
+</TableLayout>
