@@ -27,10 +27,10 @@ public class MainSlidingMenuFragment extends Fragment implements AdapterView.OnI
     private FragmentActivity mFragmentActivity;
 
     private String[] mItemStrArr = {
-            "第一题个人车辆ETC账户管理功能", "公司交通单双号管制功能"
+            "第一题个人车辆ETC账户管理功能", "公司交通单双号管制功能", "公交查询模块"
     };
     private BaseFragment[] mBaseFragmentArr = {
-            new CarEtcBalanceManagerFragment(), new TrafficControlFragment()
+            new CarEtcBalanceManagerFragment(), new TrafficControlFragment(), new BusQueryFragment()
     };
 
     @Nullable
